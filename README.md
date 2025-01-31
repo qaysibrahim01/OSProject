@@ -1,12 +1,12 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: Mao Mao
 
-Section: __Fill your class section__. 
+Section: 7
 
 Team Mates:
-1. __Muhammad Hanif Faiq Bin Mazlan 2221773__
-2. __Fill name__ and __matric no__
+1. Muhammad Hanif Faiq Bin Mazlan 2221773
+2. Mohamad Qays Bin Mohamad Ibrahim 2010901
 3. __Fill name__ and __matric no__
 
 ## Rules
@@ -57,9 +57,11 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** The default OS is Ubuntu Linux.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** The two options are:
+- 2-core CPU, 4GB RAM, 32GB disk
+- 4-core CPU, 8GB RAM, 64GB disk
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** Committing and syncing ensures that changes are saved to the main repository. Without committing and syncing, changes remain local and will be lost if the codespace is deleted or reset.
 
 ## Exploring the Terminal
 
