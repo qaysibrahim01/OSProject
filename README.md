@@ -25,7 +25,7 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)***(https://github.com/qaysibrahim01/OSProject).
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+2. How many files and folders are in this repository. ***(1 mark)***  2 folder and 1 file.
 
 
 ## Exploring github codespaces
@@ -655,13 +655,19 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** The output is a server error. The reason is that the network connection between the nodejs-container and mysql-container has not been established.
 ```bash
-
+@qaysibrahim01 ➜ /workspaces/OSProject (main) $ curl http://localhost:3000/random
+Server Error
 ```
 2. Show the instruction needed to make this work. ***(1 mark)*** 
 ```bash
-
+  docker network connect mysqlnet nodejs-container
+  Check the MySQL connection in the index.js
+  Make sure mytable is created and populated in MySQL
+  Restart both containers: 
+  docker restart mysql-container
+  docker restart nodejs-container
 ```
 
 
