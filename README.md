@@ -314,13 +314,16 @@ PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
 ```bash
 Linux codespaces-187414 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux.
 ```
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+11. What is the available free memory in the system. ***(1 mark)*** 6.0Gi
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 20448012
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+```bash
+Linux codespaces-187414 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP
+```
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** ls: Lists the files and directories in the current directory. ls -asl: Provides a detailed listing including file sizes, permissions, ownership, and inode numbers, with the total block count displayed at the top.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 2560 4K pages
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 3026.941 MHz
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** node with PID 2957
 
 ## Running your own container instance.
 
