@@ -438,7 +438,7 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . permission: drwxr-xr-x, user: root, group: root
 ```bash
-@AreNap33 ➜ /workspaces/OSProject (main) $ docker exec beautiful_stonebraker ls -ld /usr/local/apache2/htdocs
+@qaysibrahim01 ➜ /workspaces/OSProject (main) $ docker exec beautiful_stonebraker ls -ld /usr/local/apache2/htdocs
 drwxrwxrwx+ 2 1000 1000 4096 Jan 25 16:15 /usr/local/apache2/htdocs
 ```
 3. What port is the apache web server running. ***(1 mark)*** Port 80.
@@ -462,10 +462,31 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+```bash
+@qaysibrahim01 ➜ /workspaces/OSProject (main) $ docker network ls
+NETWORK ID     NAME      DRIVER    SCOPE
+13e55bf34c93   bluenet   bridge    local
+526a2a81306a   bridge    bridge    local
+43a8c262a631   host      host      local
+273ee879dcdf   none      null      local
+804bdc00626e   rednet    bridge    local
+```
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+```bash
+"Gateway": "172.18.0.1"  # bluenet
+"Gateway": "172.19.0.1"  # rednet
+```
 4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
+```bash
+Container c1 (bluenet): IP Address: 172.18.0.2 Subnet: 172.18.0.0/16
+Container c2 (rednet): IP Address: 172.19.0.2 Subnet: 172.19.0.0/16.
+```
 5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+```bash
+@qaysibrahim01 ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+ping: bad address 'c2'
+```
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
