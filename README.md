@@ -5,8 +5,8 @@ Group Name: __Fill your team name__.
 Section: __Fill your class section__. 
 
 Team Mates:
-1. __Muhammad Hanif Faiq Bin Mazlan 2221773__
-2. __Fill name__ and __matric no__
+1. Muhammad Hanif Faiq Bin Mazlan 2221773
+2. Mohamad Qays Bin Mohamad Ibrahim 2010901
 3. __Fill name__ and __matric no__
 
 ## Rules
@@ -25,7 +25,8 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+   
+3. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
 
 
 ## Exploring github codespaces
