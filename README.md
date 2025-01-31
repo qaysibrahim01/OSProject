@@ -436,9 +436,13 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . permission: drwxr-xr-x, user: root, group: root
+```bash
+@AreNap33 ➜ /workspaces/OSProject (main) $ docker exec beautiful_stonebraker ls -ld /usr/local/apache2/htdocs
+drwxrwxrwx+ 2 1000 1000 4096 Jan 25 16:15 /usr/local/apache2/htdocs
+```
+3. What port is the apache web server running. ***(1 mark)*** Port 80.
+4. What port is open for http protocol on the host machine? ***(1 mark)***  Port open is 8080.
 
 ## Create SUB Networks
 
