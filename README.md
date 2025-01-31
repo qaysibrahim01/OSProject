@@ -461,7 +461,8 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** BusyBox is a lightweight Linux distribution providing essential Unix utilities. The --name switch assigns a custom name to a container instead of using a default random name.
+
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
 ```bash
 @qaysibrahim01 ➜ /workspaces/OSProject (main) $ docker network ls
@@ -498,9 +499,21 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** yes
+```bash
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.186 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.099 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.093 ms
 
+--- c2 ping statistics ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 0.078/0.114/0.186 ms
+```
+3. What is different from the previous ping in the section above? ***(1 mark)*** The difference is that by connecting both containers to the bridgenet network, they can now communicate with each other, unlike before, when they were isolated in separate networks (bluenet and rednet).
+
+   
 ## Intermediate Level (10 marks bonus)
 
 ### Node.js and MySQL in Docker Containers
