@@ -407,10 +407,10 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
-sudo chown -R codespace:codespace myroot
+@AreNap33 ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** Yes, I can ***
 
 ## You are on your own, create your own static webpage
 
